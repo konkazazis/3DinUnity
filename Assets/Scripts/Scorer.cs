@@ -6,7 +6,11 @@ public class Scorer : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        hit++;
+        if(other.gameObject.tag != "Hit")
+        {
+            hit++;
+
+        }
         GetComponent<MeshRenderer>().material.color = Color.red;
         Debug.Log("You bumped: " + hit + " times");
     }
