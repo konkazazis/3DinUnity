@@ -13,11 +13,12 @@ public class TriggerProjectile : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-                projectile1.SetActive(true);
-                projectile2.SetActive(true);
-                projectile3.SetActive(true);
-                projectile4.SetActive(true);
-                projectile5.SetActive(true);
+            projectile1.SetActive(true);
+            projectile2.SetActive(true);
+            projectile3.SetActive(true);
+            projectile4.SetActive(true);
+            projectile5.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }
